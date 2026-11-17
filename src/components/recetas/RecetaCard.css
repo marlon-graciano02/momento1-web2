@@ -1,0 +1,48 @@
+.receta-card {
+  background: var(--card);
+  border: 1px solid var(--linea);
+  border-left: 5px solid var(--teal);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.receta-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(17, 70, 34, 0.12);
+}
+
+.receta-card__categoria {
+  align-self: flex-start;
+  background: var(--crema-2);
+  color: var(--verde-hondo);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+}
+
+.receta-card__titulo {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: var(--tinta);
+}
+
+.receta-card__descripcion {
+  margin: 0;
+  color: var(--texto);
+}
+
+.receta-card__datos {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  color: var(--gris);
+}
